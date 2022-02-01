@@ -49,7 +49,7 @@ function Navbar() {
                 <Flex
                 display={['none' , 'none' , 'flex' , 'flex']}
                 >
-                    <Link href="/login" passHref>
+                    <Link href="/auth/login" passHref>
                         <Button 
                             as="a"
                             variant="ghost"
@@ -60,7 +60,7 @@ function Navbar() {
                             Login
                         </Button>
                     </Link>
-                    <Link href="/sign-up" passHref>
+                    <Link href="/auth/sign-up" passHref>
                         <Button 
                             as="a"
                             variant="ghost"
@@ -129,7 +129,7 @@ function Navbar() {
                             </Button>
                         </Link>
                         <Divider />
-                        <Link href="/login" passHref>
+                        <Link href="/auth/login" passHref>
                             <Button 
                                 as="a"
                                 variant="ghost"
@@ -142,7 +142,7 @@ function Navbar() {
                             </Button>
                         </Link>
                         <Divider />
-                        <Link href="/sign-up" passHref>
+                        <Link href="/auth/sign-up" passHref>
                             <Button 
                                 as="a"
                                 variant="ghost"
