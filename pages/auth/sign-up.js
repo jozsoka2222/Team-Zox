@@ -13,7 +13,7 @@ function Sign_Up() {
                 <Input boxShadow='2xl' placeholder="asd@asd.com" variant="filled" mb={3} type="email" background={fieldBackground}/>
                 <Input boxShadow='2xl' placeholder="********" variant="filled" mb={6} type="password" background={fieldBackground}/>
                 <Input boxShadow='2xl' placeholder="********" variant="filled" mb={6} type="password" background={fieldBackground}/>
-                <Checkbox size='md' colorScheme="facebook" mb={6}>
+                <Checkbox size='md' colorScheme="facebook" mb={6} isInvalid>
                     Elfogadom a szabályzatot!
                 </Checkbox>
                 <Button boxShadow='2xl' colorScheme="teal">Sign-Up</Button>
