@@ -1,8 +1,12 @@
+import Navbar from '../components/Navbar/Navbar'
 
 function Home() {
 
     return (
-       <h1>ASD</h1>
+        <div>
+            <Navbar/>
+            <h1>ASD</h1>
+        </div>
     )
 }
 

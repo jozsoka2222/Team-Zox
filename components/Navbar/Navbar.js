@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { Button, Flex, Heading, useColorMode, useColorModeValue,Switch , IconButton, Divider } from '@chakra-ui/react'
 import {useState} from 'react'
 import {HamburgerIcon, CloseIcon , MoonIcon, SunIcon} from '@chakra-ui/icons'
-function Navbar() {
+export default function Navbar() {
     const {colorMode,toggleColorMode} = useColorMode()
     const fromBackground = useColorModeValue("gray.100", "gray.700")
     const isDark = colorMode ==='dark'
@@ -39,7 +39,18 @@ function Navbar() {
                             Home
                         </Button>
                     </Link>
-                    
+                    <Link href="/forum" passHref>
+                        <Button 
+                            as="a"
+                            variant="ghost"
+                            arial-label="Home"
+                            my={2}
+                            w="100%"
+                            onClick={() => changeDisplay('none')}
+                        >
+                            Forum
+                        </Button>
+                    </Link>
                 </Flex>
             </Flex>
             <Flex pos="fixed"
@@ -117,47 +128,57 @@ function Navbar() {
                     align="center"
                 >
                     <Link href="/" passHref>
-                            <Button 
-                                as="a"
-                                variant="ghost"
-                                arial-label="Home"
-                                my={5}
-                                w="100%"
-                                onClick={() => changeDisplay('none')}
-                            >
-                                Home
-                            </Button>
-                        </Link>
-                        <Divider />
-                        <Link href="/auth/login" passHref>
-                            <Button 
-                                as="a"
-                                variant="ghost"
-                                arial-label="Home"
-                                my={5}
-                                w="100%"
-                                onClick={() => changeDisplay('none')}
-                            >
-                                Login
-                            </Button>
-                        </Link>
-                        <Divider />
-                        <Link href="/auth/sign-up" passHref>
-                            <Button 
-                                as="a"
-                                variant="ghost"
-                                arial-label="Home"
-                                my={5}
-                                w="100%"
-                                onClick={() => changeDisplay('none')}
-                            >
-                                Sign Up
-                            </Button>
-                        </Link>
+                        <Button 
+                            as="a"
+                            variant="ghost"
+                            arial-label="Home"
+                            my={5}
+                            w="100%"
+                            onClick={() => changeDisplay('none')}
+                        >
+                            Home
+                        </Button>
+                    </Link>
+                    <Link href="/forum" passHref>
+                        <Button 
+                            as="a"
+                            variant="ghost"
+                            arial-label="Home"
+                            my={5}
+                            w="100%"
+                            onClick={() => changeDisplay('none')}
+                        >
+                            Forum
+                        </Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/auth/login" passHref>
+                        <Button 
+                            as="a"
+                            variant="ghost"
+                            arial-label="Home"
+                            my={5}
+                            w="100%"
+                            onClick={() => changeDisplay('none')}
+                        >
+                            Login
+                        </Button>
+                    </Link>
+                    <Divider />
+                    <Link href="/auth/sign-up" passHref>
+                        <Button 
+                            as="a"
+                            variant="ghost"
+                            arial-label="Home"
+                            my={5}
+                            w="100%"
+                            onClick={() => changeDisplay('none')}
+                        >
+                            Sign Up
+                        </Button>
+                    </Link>
                 </Flex>
             </Flex>
         </Flex>
     )
 }
-
-export default Navbar
