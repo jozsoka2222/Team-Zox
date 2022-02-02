@@ -7,7 +7,7 @@ function Sign_Up() {
 
     return (
         <Flex height="94vh" alignItems="center" justifyContent="center">
-            <Flex direction="column" background={fromBackground} p={12} rounded={6}>
+            <Flex direction="column" background={fromBackground} p={12} rounded={6} alignItems="center" justifyContent="center">
                 <Heading mb={6}>Sign Up</Heading>
                 <Input boxShadow='2xl' placeholder="asd123" variant="filled" mb={3} type="text" background={fieldBackground}/>
                 <Input boxShadow='2xl' placeholder="asd@asd.com" variant="filled" mb={3} type="email" background={fieldBackground}/>

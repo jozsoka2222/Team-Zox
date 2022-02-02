@@ -6,7 +6,7 @@ function Login() {
     const fieldBackground = useColorModeValue("gray.300", "gray.800")
     return (
         <Flex height="94vh" alignItems="center" justifyContent="center">
-            <Flex direction="column" background={fromBackground} p={12} rounded={6}>
+            <Flex direction="column" background={fromBackground} p={12} rounded={6} alignItems="center" justifyContent="center">
                 <Heading mb={6}>Log In</Heading>
                 <Input boxShadow='2xl' placeholder="asd@asd.com" variant="filled" mb={3} type="email" background={fieldBackground}/>
                 <Input boxShadow='2xl' placeholder="********" variant="filled" mb={6} type="password" background={fieldBackground}/>
