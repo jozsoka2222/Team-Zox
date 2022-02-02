@@ -9,7 +9,7 @@ function Navbar() {
     const [display, changeDisplay] = useState('none')
     return (
         <Flex
-            height="6vh" background={fromBackground} p={3}
+            height="3.5rem" background={fromBackground} p={3.5}
         >
             <Flex 
             pos="fixed"
